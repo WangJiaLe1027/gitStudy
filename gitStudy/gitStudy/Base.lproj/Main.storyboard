@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--Title-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -15,36 +15,22 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="82q-y2-C1Q">
-                                <rect key="frame" x="0.0" y="192" width="320" height="44"/>
-                                <items>
-                                    <barButtonItem title="Item" id="tLg-Bu-kCt"/>
-                                </items>
-                            </toolbar>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yfV-BT-caH">
-                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <navigationItem title="Title" id="1rW-g4-6JF">
-                                        <barButtonItem key="backBarButtonItem" title="1" id="Cxa-gz-BU0"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="yfV-BT-caH" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="ECl-QP-lr7"/>
-                            <constraint firstItem="yfV-BT-caH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="R97-71-kT8"/>
-                            <constraint firstAttribute="trailing" secondItem="yfV-BT-caH" secondAttribute="trailing" id="VWE-Ui-fJH"/>
-                        </constraints>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Zz1-ea-I07" appends="YES" id="UH1-Ps-AeX"/>
+                        </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="jpx-ba-jhn"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="Zz1-ea-I07">
+                    <connections>
+                        <segue destination="lDb-lf-mla" kind="custom" id="8aw-JG-Hp0"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="153.59999999999999" y="368.25333333333333"/>
+            <point key="canvasLocation" x="215" y="397"/>
         </scene>
         <!--Next View Controller-->
         <scene sceneID="HSs-ik-prp">
@@ -57,12 +43,34 @@
                     <view key="view" contentMode="scaleToFill" id="LYx-bj-aBW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CFC-IX-Cpn">
+                                <rect key="frame" x="0.0" y="320" width="320" height="248"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="CFC-IX-Cpn" firstAttribute="leading" secondItem="LYx-bj-aBW" secondAttribute="leading" id="Evz-gN-HeN"/>
+                            <constraint firstItem="ECT-dQ-r8W" firstAttribute="top" secondItem="CFC-IX-Cpn" secondAttribute="bottom" id="WW5-iO-uDj"/>
+                            <constraint firstItem="CFC-IX-Cpn" firstAttribute="top" secondItem="J6d-F6-9KA" secondAttribute="bottom" constant="300" id="bac-gW-VEo"/>
+                            <constraint firstAttribute="trailing" secondItem="CFC-IX-Cpn" secondAttribute="trailing" id="f1f-N4-xxq"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="qPv-Wy-39E" appends="YES" id="R9t-mV-UDc"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RUh-f0-cTo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="qPv-Wy-39E">
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="custom" id="RZN-AR-Qce"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="500" y="368"/>
+            <point key="canvasLocation" x="687" y="397"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
