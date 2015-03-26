@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  nextViewController.h
 //  gitStudy
 //
 //  Created by wangjiale on 15/3/26.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface nextViewController : UIViewController
 
 @end
