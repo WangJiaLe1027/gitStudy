@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD0DB45E1AC5601300433F48 /* ColorCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0DB45D1AC5601300433F48 /* ColorCircle.m */; };
+		FD0DB4601AC568AF00433F48 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0DB45F1AC568AF00433F48 /* CoreGraphics.framework */; };
+		FD0DB4621AC568C700433F48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0DB4611AC568C700433F48 /* UIKit.framework */; };
+		FD0DB4641AC568D700433F48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0DB4631AC568D700433F48 /* Foundation.framework */; };
+		FD0DB46A1AC56A3C00433F48 /* MCFireworksButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0DB4671AC56A3C00433F48 /* MCFireworksButton.m */; };
+		FD0DB46B1AC56A3C00433F48 /* MCFireworksView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0DB4691AC56A3C00433F48 /* MCFireworksView.m */; };
 		FDCF81741AC3DFCE00969309 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCF81731AC3DFCE00969309 /* main.m */; };
 		FDCF81771AC3DFCE00969309 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCF81761AC3DFCE00969309 /* AppDelegate.m */; };
 		FDCF817D1AC3DFCE00969309 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDCF817B1AC3DFCE00969309 /* Main.storyboard */; };
@@ -28,6 +34,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD0DB45C1AC5601300433F48 /* ColorCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorCircle.h; sourceTree = "<group>"; };
+		FD0DB45D1AC5601300433F48 /* ColorCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorCircle.m; sourceTree = "<group>"; };
+		FD0DB45F1AC568AF00433F48 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FD0DB4611AC568C700433F48 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FD0DB4631AC568D700433F48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FD0DB4661AC56A3C00433F48 /* MCFireworksButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFireworksButton.h; sourceTree = "<group>"; };
+		FD0DB4671AC56A3C00433F48 /* MCFireworksButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFireworksButton.m; sourceTree = "<group>"; };
+		FD0DB4681AC56A3C00433F48 /* MCFireworksView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFireworksView.h; sourceTree = "<group>"; };
+		FD0DB4691AC56A3C00433F48 /* MCFireworksView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFireworksView.m; sourceTree = "<group>"; };
 		FDCF816E1AC3DFCE00969309 /* gitStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gitStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDCF81721AC3DFCE00969309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDCF81731AC3DFCE00969309 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -50,6 +65,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD0DB4641AC568D700433F48 /* Foundation.framework in Frameworks */,
+				FD0DB4621AC568C700433F48 /* UIKit.framework in Frameworks */,
+				FD0DB4601AC568AF00433F48 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,9 +81,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD0DB4651AC56A3C00433F48 /* MCFireworksButton */ = {
+			isa = PBXGroup;
+			children = (
+				FD0DB4661AC56A3C00433F48 /* MCFireworksButton.h */,
+				FD0DB4671AC56A3C00433F48 /* MCFireworksButton.m */,
+				FD0DB4681AC56A3C00433F48 /* MCFireworksView.h */,
+				FD0DB4691AC56A3C00433F48 /* MCFireworksView.m */,
+			);
+			name = MCFireworksButton;
+			path = "../../../Downloads/MCFireworksButton-master/MCFireworksButton";
+			sourceTree = "<group>";
+		};
 		FDCF81651AC3DFCE00969309 = {
 			isa = PBXGroup;
 			children = (
+				FD0DB4651AC56A3C00433F48 /* MCFireworksButton */,
 				FDCF81701AC3DFCE00969309 /* gitStudy */,
 				FDCF818A1AC3DFCE00969309 /* gitStudyTests */,
 				FDCF816F1AC3DFCE00969309 /* Products */,
@@ -84,6 +115,8 @@
 		FDCF81701AC3DFCE00969309 /* gitStudy */ = {
 			isa = PBXGroup;
 			children = (
+				FD0DB45C1AC5601300433F48 /* ColorCircle.h */,
+				FD0DB45D1AC5601300433F48 /* ColorCircle.m */,
 				FDCF81751AC3DFCE00969309 /* AppDelegate.h */,
 				FDCF81761AC3DFCE00969309 /* AppDelegate.m */,
 				FDCF817B1AC3DFCE00969309 /* Main.storyboard */,
@@ -119,6 +152,9 @@
 		FDCF818B1AC3DFCE00969309 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FD0DB4631AC568D700433F48 /* Foundation.framework */,
+				FD0DB4611AC568C700433F48 /* UIKit.framework */,
+				FD0DB45F1AC568AF00433F48 /* CoreGraphics.framework */,
 				FDCF818C1AC3DFCE00969309 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -224,7 +260,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD0DB46A1AC56A3C00433F48 /* MCFireworksButton.m in Sources */,
+				FD0DB45E1AC5601300433F48 /* ColorCircle.m in Sources */,
 				FDCF819B1AC3E6AD00969309 /* ViewController.m in Sources */,
+				FD0DB46B1AC56A3C00433F48 /* MCFireworksView.m in Sources */,
 				FDCF819E1AC3E79000969309 /* nextViewController.m in Sources */,
 				FDCF81771AC3DFCE00969309 /* AppDelegate.m in Sources */,
 				FDCF81741AC3DFCE00969309 /* main.m in Sources */,
@@ -418,6 +457,7 @@
 				FDCF81931AC3DFCE00969309 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FDCF81941AC3DFCE00969309 /* Build configuration list for PBXNativeTarget "gitStudyTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +466,7 @@
 				FDCF81961AC3DFCE00969309 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
