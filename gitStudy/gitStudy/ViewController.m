@@ -28,16 +28,21 @@
     
     
     CGRect theMainScreen = [[UIScreen mainScreen] bounds];
+    
     ColorCircle *newCircle = [[ColorCircle alloc] initWithFrame:CGRectMake(theMainScreen.size.width * 0.191 , 100, theMainScreen.size.width * 0.618, theMainScreen.size.width *0.618)];
+    
     newCircle.radius = 10;
     newCircle.strokeColor = [UIColor yellowColor];
+    newCircle.backgroundColor = [UIColor clearColor];
     [self.view addSubview:newCircle];
+    
+    
     
     CAEmitterCell *snow = [CAEmitterCell emitterCell];
     //粒子名.你可以给你的cell取一个名字，用来在之后的时间里查找和修改它的属性。
     snow.name = @"snow1";
     //粒子每秒出生个数，默认为0;
-    snow.birthRate = 2000.0;
+    snow.birthRate = 1000.0;
     //粒子生命周期（秒）
     snow.lifetime = 3.0;
     //粒子生命周期（lifetime-lifetimeRange,lifetime+lifetimeRange）
@@ -57,7 +62,7 @@
     //
     snow.scale = 0.05;
     snow.scaleRange = 0.3;
-    //snow.scaleSpeed = 0.00001;
+    //snow.scaleSpeed = 0.001;
     //
     //snow.spin = 10;
     //snow.spinRange = 0.1;
@@ -70,13 +75,8 @@
     //snow.blueSpeed = 10.0;
     //snow.alphaSpeed = 10.0;
     //
-    //snow.redRange = 255.0;
-    //snow.greenRange = 255.0;
-    //snow.blueRange = 255.0;
-    //snow.alphaRange = 0.8;
-    //
     snow.contents = (id)[[UIImage imageNamed:@"Sparkle"] CGImage];;
-    //snow.contentsRect = CGRectMake(100, 100, 10, 10);
+    //snow.contentsRect = CGRectMake(0, 0, 100, 100);
     //snow.style =
     
     
@@ -87,7 +87,7 @@
     //kCAEmitterLayerPoint;
     //kCAEmitterLayerLine;
     //kCAEmitterLayerRectangle;
-    //kCAEmitterLayerCuboid;
+//    kCAEmitterLayerCuboid;
     //kCAEmitterLayerCircle;
     //kCAEmitterLayerSphere;
     snowLayer.emitterShape = kCAEmitterLayerCircle;
@@ -107,7 +107,7 @@
     snowLayer.emitterMode = kCAEmitterLayerOutline;
     
     //发射源位置
-    snowLayer.emitterPosition = CGPointMake(theMainScreen.size.width * 0.618 / 2 + theMainScreen.size.width * 0.191 , 100 + theMainScreen.size.width * 0.618 /2);
+    snowLayer.emitterPosition = CGPointMake(theMainScreen.size.width * 0.618 / 2 + theMainScreen.size.width * 0.191 ,100+theMainScreen.size.width * 0.618 /2);
     //发射源的尺寸大小
     snowLayer.emitterSize = CGSizeMake(theMainScreen.size.width * 0.618, theMainScreen.size.width *0.618);
     //snowLayer.emitterSize = CGSizeMake(0.618 * theMainScreen.size.width , 0.618 * theMainScreen.size.width);
@@ -116,7 +116,7 @@
     //snowLayer.lifetime = 1;
     snowLayer.emitterCells = @[snow];
     
-    snowLayer.emitterCells = [NSArray arrayWithObjects:snow,nil];
+    //snowLayer.emitterCells = [NSArray arrayWithObjects:snow,nil];
     [self.view.layer insertSublayer:snowLayer atIndex:0];
      
     

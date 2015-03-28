@@ -43,6 +43,12 @@
                                                                     style:UIBarButtonItemStyleDone
                                                                    target:self
                                                                    action:@selector(clickRightButton)];
+    UIButton *button1 = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    [button1 setBackgroundColor:[UIColor yellowColor]];
+    [button1 setTintColor:[UIColor blackColor]];
+    [button1 setTitle:@"123" forState:UIControlStateNormal ];
+    [self.view addSubview:button1];
+    
     //设置导航栏内容
     [navigationItem setTitle:@"雨松MOMO程序世界"];
     
