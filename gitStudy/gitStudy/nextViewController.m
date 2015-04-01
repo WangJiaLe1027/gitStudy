@@ -7,7 +7,7 @@
 //
 
 #import "nextViewController.h"
-
+#import "ViewController.h"
 @interface nextViewController ()
 
 @end
@@ -47,6 +47,7 @@
     [button1 setBackgroundColor:[UIColor yellowColor]];
     [button1 setTintColor:[UIColor blackColor]];
     [button1 setTitle:@"123" forState:UIControlStateNormal ];
+    //[button1 targetForAction:self withSender:@"tat"];
     [self.view addSubview:button1];
     
     //设置导航栏内容
@@ -68,6 +69,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)clickButton1{
+    
 }
 
 -(void)clickLeftButton

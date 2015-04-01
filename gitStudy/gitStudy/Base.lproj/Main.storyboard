@@ -43,23 +43,11 @@
                     <view key="view" contentMode="scaleToFill" id="LYx-bj-aBW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CFC-IX-Cpn">
-                                <rect key="frame" x="0.0" y="320" width="320" height="248"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <gestureRecognizers/>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstItem="CFC-IX-Cpn" firstAttribute="leading" secondItem="LYx-bj-aBW" secondAttribute="leading" id="Evz-gN-HeN"/>
-                            <constraint firstItem="ECT-dQ-r8W" firstAttribute="top" secondItem="CFC-IX-Cpn" secondAttribute="bottom" id="WW5-iO-uDj"/>
-                            <constraint firstItem="CFC-IX-Cpn" firstAttribute="top" secondItem="J6d-F6-9KA" secondAttribute="bottom" constant="300" id="bac-gW-VEo"/>
-                            <constraint firstAttribute="trailing" secondItem="CFC-IX-Cpn" secondAttribute="trailing" id="f1f-N4-xxq"/>
-                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="qPv-Wy-39E" appends="YES" id="R9t-mV-UDc"/>
+                            <outletCollection property="gestureRecognizers" destination="c7D-Qa-4dA" appends="YES" id="ifS-yF-3hR"/>
                         </connections>
                     </view>
                 </viewController>
@@ -69,8 +57,31 @@
                         <segue destination="vXZ-lx-hvc" kind="custom" id="RZN-AR-Qce"/>
                     </connections>
                 </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="c7D-Qa-4dA">
+                    <connections>
+                        <segue destination="jLX-pc-7hP" kind="custom" id="PqX-t8-nWs"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="687" y="397"/>
+        </scene>
+        <!--Picker View Controller-->
+        <scene sceneID="7fw-ob-jIm">
+            <objects>
+                <viewController id="jLX-pc-7hP" customClass="PickerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QF1-Jq-dKs"/>
+                        <viewControllerLayoutGuide type="bottom" id="5xj-0l-oag"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P52-Sp-fOh" customClass="PickerView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0MV-G3-Npw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1069" y="393"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -13,6 +13,7 @@
 		FD0DB4641AC568D700433F48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0DB4631AC568D700433F48 /* Foundation.framework */; };
 		FD0DB46A1AC56A3C00433F48 /* MCFireworksButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0DB4671AC56A3C00433F48 /* MCFireworksButton.m */; };
 		FD0DB46B1AC56A3C00433F48 /* MCFireworksView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0DB4691AC56A3C00433F48 /* MCFireworksView.m */; };
+		FDB1F0911ACC06E9009B5416 /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB1F0901ACC06E9009B5416 /* PickerViewController.m */; };
 		FDCF81741AC3DFCE00969309 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCF81731AC3DFCE00969309 /* main.m */; };
 		FDCF81771AC3DFCE00969309 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCF81761AC3DFCE00969309 /* AppDelegate.m */; };
 		FDCF817D1AC3DFCE00969309 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDCF817B1AC3DFCE00969309 /* Main.storyboard */; };
@@ -43,6 +44,8 @@
 		FD0DB4671AC56A3C00433F48 /* MCFireworksButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFireworksButton.m; sourceTree = "<group>"; };
 		FD0DB4681AC56A3C00433F48 /* MCFireworksView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFireworksView.h; sourceTree = "<group>"; };
 		FD0DB4691AC56A3C00433F48 /* MCFireworksView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFireworksView.m; sourceTree = "<group>"; };
+		FDB1F08F1ACC06E9009B5416 /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
+		FDB1F0901ACC06E9009B5416 /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
 		FDCF816E1AC3DFCE00969309 /* gitStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gitStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDCF81721AC3DFCE00969309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDCF81731AC3DFCE00969309 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 		FDCF81701AC3DFCE00969309 /* gitStudy */ = {
 			isa = PBXGroup;
 			children = (
+				FDB1F08F1ACC06E9009B5416 /* PickerViewController.h */,
+				FDB1F0901ACC06E9009B5416 /* PickerViewController.m */,
 				FD0DB45C1AC5601300433F48 /* ColorCircle.h */,
 				FD0DB45D1AC5601300433F48 /* ColorCircle.m */,
 				FDCF81751AC3DFCE00969309 /* AppDelegate.h */,
@@ -266,6 +271,7 @@
 				FD0DB46B1AC56A3C00433F48 /* MCFireworksView.m in Sources */,
 				FDCF819E1AC3E79000969309 /* nextViewController.m in Sources */,
 				FDCF81771AC3DFCE00969309 /* AppDelegate.m in Sources */,
+				FDB1F0911ACC06E9009B5416 /* PickerViewController.m in Sources */,
 				FDCF81741AC3DFCE00969309 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
