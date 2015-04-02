@@ -20,9 +20,9 @@
     NSArray *pickerArray;
 }
 @property (strong, nonatomic) IBOutlet UIPickerView *thePickerView;
-@property (strong, nonatomic) IBOutlet UITextField *theTextField;
 @property (strong, nonatomic) IBOutlet UIButton *button1;
-@end
+@property (strong, nonatomic) IBOutlet UILabel *Label1;
+ @end
 
 @implementation PickerViewController
 - (void)viewDidLoad {
@@ -32,9 +32,12 @@
     
     pickerArray = [NSArray arrayWithObjects:@"动物",@"植物",@"石头",@"天空",@"世界", nil];
     
-    self.theTextField = [[UITextField alloc] initWithFrame:CGRectMake(SCREEN_WIDTH*0.191, 100, SCREEN_WIDTH*0.618, 50)];
+    self.Label1 = [[UIla alloc] initWithFrame:CGRectMake(SCREEN_WIDTH*0.191, 100, SCREEN_WIDTH*0.618, 50)];
     self.theTextField.borderStyle = UITextBorderStyleRoundedRect;
     [self.view addSubview:self.theTextField];
+    
+    
+    
     
     self.thePickerView = [[UIPickerView alloc]initWithFrame:CGRectMake(0, SCREEN_HIGHT, SCREEN_WIDTH, 100)];
     self.thePickerView.delegate = self ;
@@ -52,7 +55,7 @@
     [[UILongPressGestureRecognizer alloc] initWithTarget:self
                                                   action:@selector(handleLongPress2:)];
     longPressGR.allowableMovement=NO;
-    longPressGR.minimumPressDuration = 0.2;
+    longPressGR.minimumPressDuration = 0.000001;
     [self.theTextField addGestureRecognizer:longPressGR];
     //[longPressGR release];
     //响应的事件
@@ -80,12 +83,12 @@
 -(NSString*) pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
     return [pickerArray objectAtIndex:row];
 }
-
+/*
 -(void)textFieldDidEndEditing:(UITextField *)textField{
     NSInteger row = [self.thePickerView selectedRowInComponent:0];
     self.theTextField.text = [pickerArray objectAtIndex:row];
 }
-
+*/
 
 - (IBAction)selectButton{
     [self textFieldDidEndEditing:self.theTextField];
