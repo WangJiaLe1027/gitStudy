@@ -32,9 +32,9 @@
     
     pickerArray = [NSArray arrayWithObjects:@"动物",@"植物",@"石头",@"天空",@"世界", nil];
     
-    self.Label1 = [[UIla alloc] initWithFrame:CGRectMake(SCREEN_WIDTH*0.191, 100, SCREEN_WIDTH*0.618, 50)];
-    self.theTextField.borderStyle = UITextBorderStyleRoundedRect;
-    [self.view addSubview:self.theTextField];
+    //self.Label1 = [[UIla alloc] initWithFrame:CGRectMake(SCREEN_WIDTH*0.191, 100, SCREEN_WIDTH*0.618, 50)];
+    //self.theTextField.borderStyle = UITextBorderStyleRoundedRect;
+    //[self.view addSubview:self.theTextField];
     
     
     
@@ -56,7 +56,7 @@
                                                   action:@selector(handleLongPress2:)];
     longPressGR.allowableMovement=NO;
     longPressGR.minimumPressDuration = 0.000001;
-    [self.theTextField addGestureRecognizer:longPressGR];
+    //[self.theTextField addGestureRecognizer:longPressGR];
     //[longPressGR release];
     //响应的事件
 
@@ -91,7 +91,7 @@
 */
 
 - (IBAction)selectButton{
-    [self textFieldDidEndEditing:self.theTextField];
+    //[self textFieldDidEndEditing:self.theTextField];
     self.button1.frame = CGRectMake(0, SCREEN_HIGHT, 0, 0);
     self.thePickerView.frame = CGRectMake(0, SCREEN_HIGHT, 0, 0);
     
